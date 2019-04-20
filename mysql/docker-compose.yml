@@ -8,9 +8,11 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: shawang
+      MYSQL_ROOT_PASSWORD: abc123
     volumes:
-      - /home/shawang/docker/volumes/datadir/mysql/ms:/var/lib/mysql
+      - /Users/shawn/Docker/volumes/datadir/mysql/ms:/var/lib/mysql
+    ports:
+      - 3306:3306
 
   adminer:
     image: adminer
