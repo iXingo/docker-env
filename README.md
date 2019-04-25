@@ -1,2 +1,2 @@
 # Docker
-A docker develop environment
+A docker develop environment for mac.

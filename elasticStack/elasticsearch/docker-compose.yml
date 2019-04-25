@@ -14,7 +14,7 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - /home/shawang/docker/volumes/datadir/elasticsearch/es5.6.11:/usr/share/elasticsearch/data
+      - /Users/shawn/Docker/volumes/datadir/elasticsearch/es01:/usr/share/elasticsearch/data
     ports:
       - 9200:9200
     networks:
@@ -34,7 +34,7 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - /home/shawang/docker/volumes/datadir/elasticsearch/es5.6.12:/usr/share/elasticsearch/data
+      - /Users/shawn/Docker/volumes/datadir/elasticsearch/es02:/usr/share/elasticsearch/data
     networks:
       - esnet
 
