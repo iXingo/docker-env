@@ -27,11 +27,11 @@ services:
         delay: 10s
       resources:
         limits:
-          cpus: '2'
-          memory: 512M
+          cpus: '4'
+          memory: 1024M
         reservations:
-          cpus: '2'
-          memory: 512M
+          cpus: '4'
+          memory: 1024M
       restart_policy:
         condition: on-failure
         delay: 5s
@@ -76,11 +76,11 @@ services:
         delay: 10s
       resources:
         limits:
-          cpus: '2'
-          memory: 512M
+          cpus: '4'
+          memory: 1024M
         reservations:
-          cpus: '2'
-          memory: 512M
+          cpus: '4'
+          memory: 1024M
       restart_policy:
         condition: on-failure
         delay: 5s
@@ -124,11 +124,11 @@ services:
         delay: 10s
       resources:
         limits:
-          cpus: '1'
-          memory: 256M
+          cpus: '4'
+          memory: 1024M
         reservations:
-          cpus: '1'
-          memory: 256M
+          cpus: '4'
+          memory: 1024M
       restart_policy:
         condition: on-failure
         delay: 5s
@@ -170,11 +170,11 @@ services:
         delay: 10s
       resources:
         limits:
-          cpus: '2'
-          memory: 1024M
+          cpus: '4'
+          memory: 2048M
         reservations:
-          cpus: '2'
-          memory: 1024M
+          cpus: '4'
+          memory: 2048M
       restart_policy:
         condition: on-failure
         delay: 30s
