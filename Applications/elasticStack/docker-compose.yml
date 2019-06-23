@@ -8,7 +8,7 @@ services:
       - cluster.name=docker-cluster
       - cluster.initial_master_nodes=elasticsearch1
       - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms512M -Xmx1024M"
+      - "ES_JAVA_OPTS=-Xmx1024M -Xmx1024M"
       - http.cors.enabled=true
       - http.cors.allow-origin=*
       - network.host=_eth0_
@@ -56,7 +56,7 @@ services:
       - cluster.name=docker-cluster
       - cluster.initial_master_nodes=elasticsearch1
       - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms512M -Xmx1024M"
+      - "ES_JAVA_OPTS=-Xmx1024M -Xmx1024M"
       - "discovery.zen.ping.unicast.hosts=elasticsearch1"
       - http.cors.enabled=true
       - http.cors.allow-origin=*
@@ -104,7 +104,7 @@ services:
       - cluster.name=docker-cluster
       - cluster.initial_master_nodes=elasticsearch1
       - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms512M -Xmx1024M"
+      - "ES_JAVA_OPTS=-Xmx1024M -Xmx1024M"
       - "discovery.zen.ping.unicast.hosts=elasticsearch1"
       - http.cors.enabled=true
       - http.cors.allow-origin=*
