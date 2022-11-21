@@ -127,7 +127,7 @@ services:
       - kafka-schema-registry
 
   kafka-rest-proxy:
-    image: confluentinc/cp-kafka-rest:5.2.2
+    image: confluentinc/cp-kafka-rest:5.5.12
     hostname: kafka-rest-proxy
     ports:
       - "8082:8082"
