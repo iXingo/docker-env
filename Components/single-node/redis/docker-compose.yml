@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   redis:
-    image: redis:5.0.14
+    image: redis:7.0.5
     command: ["redis-server", "--appendonly", "yes"]
     hostname: redis
     ports:
