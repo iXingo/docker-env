@@ -227,7 +227,7 @@ services:
       - elastic
 
   packetbeat:
-    image: docker.elastic.co/beats/packetbeat:7.13.2
+    image: docker.elastic.co/beats/packetbeat:8.5.1
     command: --strict.perms=false
     environment:
       - setup.kibana.host=kibana:5601
