@@ -1,6 +1,6 @@
 # DevelopWithDocker
 
-This is a personal project for shawn to develop with docker in mac local enviorment.
+This is a project for developers to develop with docker in mac local enviorment.
 
 ## Elastic Stack
 
@@ -8,7 +8,7 @@ This is a personal project for shawn to develop with docker in mac local enviorm
 * Kibana
 * Logstash
 
-## DB
+## Database
 
 * MySQL
 * MongoDB
@@ -18,7 +18,9 @@ This is a personal project for shawn to develop with docker in mac local enviorm
 ## Message
 
 * Kafka
+* ActiveMQ
 
-## Zookeeper
+## Middleware Components
 
-## Hadoop
+* Zookeeper
+* Hadoop
