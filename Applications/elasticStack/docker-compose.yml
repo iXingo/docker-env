@@ -198,7 +198,7 @@ services:
     networks:
       - elastic
   metricbeat:
-    image: docker.elastic.co/beats/metricbeat:8.5.3
+    image: docker.elastic.co/beats/metricbeat:8.6.0
     # command: --strict.perms=false
     environment:
       - setup.kibana.host=kibana:5601
