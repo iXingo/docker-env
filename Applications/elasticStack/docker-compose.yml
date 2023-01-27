@@ -145,7 +145,7 @@ services:
     ports:
       - 9202:9200
   kibana:
-    image: docker.elastic.co/kibana/kibana:8.6.0
+    image: docker.elastic.co/kibana/kibana:8.6.1
     container_name: kibana
     environment:
       SERVER_NAME: localhost
