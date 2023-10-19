@@ -1,4 +1,4 @@
-version: '2.1'
+version: '3.8'
 
 services:
   zoo1:
@@ -12,8 +12,8 @@ services:
         ZOO_PORT: 2181
         ZOO_SERVERS: server.1=zoo1:2888:3888
     volumes:
-      - /Users/shawn/Docker/volumes/datadir/zookeeper/zoo01/data:/data
-      - /Users/shawn/Docker/volumes/datadir/zookeeper/zoo01/datalog:/datalog
+      - $HOME/Docker/volumes/datadir/zookeeper/zoo01/data:/data
+      - $HOME/Docker/volumes/datadir/zookeeper/zoo01/datalog:/datalog
 
 
   kafka1:
@@ -30,7 +30,7 @@ services:
       KAFKA_LOG4J_LOGGERS: "kafka.controller=INFO,kafka.producer.async.DefaultEventHandler=INFO,state.change.logger=INFO"
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     volumes:
-      - /Users/shawn/Docker/volumes/datadir/kafka/kf01/data:/var/lib/kafka/data
+      - $HOME/Docker/volumes/datadir/kafka/kf01/data:/var/lib/kafka/data
     depends_on:
       - zoo1
 

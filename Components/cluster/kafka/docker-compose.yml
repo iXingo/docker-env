@@ -11,8 +11,8 @@ services:
       ZOO_MY_ID: 1
       ZOO_SERVERS: server.1=0.0.0.0:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=zoo3:2888:3888;2181
     volumes:
-      - /Users/shawn/Docker/volumes/datadir/zookeeper/zoo01/data:/data
-      - /Users/shawn/Docker/volumes/datadir/zookeeper/zoo01/datalog:/datalog
+      - $HOME/Docker/volumes/datadir/zookeeper/zoo01/data:/data
+      - $HOME/Docker/volumes/datadir/zookeeper/zoo01/datalog:/datalog
 
   zoo2:
     image: zookeeper:latest
@@ -24,8 +24,8 @@ services:
       ZOO_MY_ID: 2
       ZOO_SERVERS: server.1=zoo1:2888:3888;2181 server.2=0.0.0.0:2888:3888;2181 server.3=zoo3:2888:3888;2181
     volumes:
-      - /Users/shawn/Docker/volumes/datadir/zookeeper/zoo02/data:/data
-      - /Users/shawn/Docker/volumes/datadir/zookeeper/zoo02/datalog:/datalog
+      - $HOME/Docker/volumes/datadir/zookeeper/zoo02/data:/data
+      - $HOME/Docker/volumes/datadir/zookeeper/zoo02/datalog:/datalog
 
   zoo3:
     image: zookeeper:latest
@@ -37,8 +37,8 @@ services:
       ZOO_MY_ID: 3
       ZOO_SERVERS: server.1=zoo1:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=0.0.0.0:2888:3888;2181
     volumes:
-      - /Users/shawn/Docker/volumes/datadir/zookeeper/zoo03/data:/data
-      - /Users/shawn/Docker/volumes/datadir/zookeeper/zoo03/datalog:/datalog
+      - $HOME/Docker/volumes/datadir/zookeeper/zoo03/data:/data
+      - $HOME/Docker/volumes/datadir/zookeeper/zoo03/datalog:/datalog
 
 
   kafka1:
@@ -54,7 +54,7 @@ services:
       KAFKA_BROKER_ID: 1
       KAFKA_LOG4J_LOGGERS: "kafka.controller=INFO,kafka.producer.async.DefaultEventHandler=INFO,state.change.logger=INFO"
     volumes:
-      - /Users/shawn/Docker/volumes/datadir/kafka/kf01/data:/var/lib/kafka/data
+      - $HOME/Docker/volumes/datadir/kafka/kf01/data:/var/lib/kafka/data
     depends_on:
       - zoo1
       - zoo2
@@ -73,7 +73,7 @@ services:
       KAFKA_BROKER_ID: 2
       KAFKA_LOG4J_LOGGERS: "kafka.controller=INFO,kafka.producer.async.DefaultEventHandler=INFO,state.change.logger=INFO"
     volumes:
-      - /Users/shawn/Docker/volumes/datadir/kafka/kf02/data:/var/lib/kafka/data
+      - $HOME/Docker/volumes/datadir/kafka/kf02/data:/var/lib/kafka/data
     depends_on:
       - zoo1
       - zoo2
@@ -92,7 +92,7 @@ services:
       KAFKA_BROKER_ID: 3
       KAFKA_LOG4J_LOGGERS: "kafka.controller=INFO,kafka.producer.async.DefaultEventHandler=INFO,state.change.logger=INFO"
     volumes:
-      - /Users/shawn/Docker/volumes/datadir/kafka/kf03/data:/var/lib/kafka/data
+      - $HOME/Docker/volumes/datadir/kafka/kf03/data:/var/lib/kafka/data
     depends_on:
       - zoo1
       - zoo2
