@@ -241,7 +241,7 @@ services:
       - elastic
 
   filebeat:
-    image: docker.elastic.co/beats/filebeat:8.11.1
+    image: docker.elastic.co/beats/filebeat:8.11.2
     command: --strict.perms=false
     environment:
       - setup.kibana.host=kibana:5601
