@@ -255,7 +255,7 @@ services:
     networks:
       - elastic
   apmserver:
-    image: docker.elastic.co/apm/apm-server:8.11.3
+    image: docker.elastic.co/apm/apm-server:8.12.0
     command: --strict.perms=false
     ports:
       - 8200:8200
