@@ -99,7 +99,7 @@ services:
       - zoo3
   
   kafka-schema-registry:
-    image: confluentinc/cp-schema-registry:7.5.3
+    image: confluentinc/cp-schema-registry:7.6.0
     hostname: kafka-schema-registry
     ports:
       - "8081:8081"
