@@ -184,7 +184,7 @@ services:
       - elastic
       - ingress
   auditbeat:
-    image: docker.elastic.co/beats/auditbeat:8.12.2
+    image: docker.elastic.co/beats/auditbeat:8.13.0
     command: auditbeat -e -strict.perms=false
     user: root
     environment:
