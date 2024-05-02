@@ -12,4 +12,4 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: shawang
     volumes:
-      - /home/shawang/docker/volumes/datadir/mongo/mg:/data/db
+      - $HOME/docker/volumes/datadir/mongo/mg:/data/db

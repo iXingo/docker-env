@@ -10,7 +10,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: abc123
     volumes:
-      - $HOME/Docker/volumes/datadir/mysql/ms:/var/lib/mysql
+      - $HOME/docker/volumes/datadir/mysql/ms:/var/lib/mysql
     ports:
       - 3306:3306
 

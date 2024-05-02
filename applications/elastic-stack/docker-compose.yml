@@ -41,7 +41,7 @@ services:
       - type: volume
         source: logs
         target: /var/log
-      - $HOME/Docker/volumes/datadir/elasticsearch/es01:/usr/share/elasticsearch/data
+      - $HOME/docker/volumes/datadir/elasticsearch/es01:/usr/share/elasticsearch/data
     networks:
       - elastic
       - ingress
@@ -90,7 +90,7 @@ services:
       - type: volume
         source: logs
         target: /var/log
-      - $HOME/Docker/volumes/datadir/elasticsearch/es02:/usr/share/elasticsearch/data
+      - $HOME/docker/volumes/datadir/elasticsearch/es02:/usr/share/elasticsearch/data
     networks:
       - elastic
       - ingress
@@ -138,7 +138,7 @@ services:
       - type: volume
         source: logs
         target: /var/log
-      - $HOME/Docker/volumes/datadir/elasticsearch/es03:/usr/share/elasticsearch/data
+      - $HOME/docker/volumes/datadir/elasticsearch/es03:/usr/share/elasticsearch/data
     networks:
       - elastic
       - ingress

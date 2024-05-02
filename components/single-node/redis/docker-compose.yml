@@ -8,4 +8,4 @@ services:
     ports:
       - '6379:6379'
     volumes:
-      - $HOME/Docker/volumes/datadir/redis/rd:/data
+      - $HOME/docker/volumes/datadir/redis/rd:/data
