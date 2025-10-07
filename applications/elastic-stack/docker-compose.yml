@@ -216,7 +216,7 @@ services:
       - elastic
 
   heartbeat:
-    image: docker.elastic.co/beats/heartbeat:8.18.2
+    image: docker.elastic.co/beats/heartbeat:9.1.5
     command: --strict.perms=false
     environment:
       - setup.kibana.host=kibana:5601
